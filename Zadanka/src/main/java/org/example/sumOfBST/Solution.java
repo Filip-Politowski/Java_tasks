@@ -2,6 +2,8 @@ package org.example.sumOfBST;
 
 public class Solution {
     public int rangeSumBST(TreeNode root, int low, int high) {
+
+
         if (root == null) {
             return 0;
         }
@@ -21,5 +23,7 @@ public class Solution {
         }
 
         return sum;
+
     }
+
 }
