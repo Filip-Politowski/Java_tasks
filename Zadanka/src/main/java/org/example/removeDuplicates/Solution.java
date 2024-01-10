@@ -13,16 +13,19 @@ public class Solution {
 
 
         List<Integer> list = new ArrayList<>();
-        int uniqueElements = 0;
+
 
         for (int num : nums) {
             if(!list.contains(num)){
                 list.add(num);
-                uniqueElements++;
+
             }
         }
-        System.out.println(list);
+        int i = 0;
+        for(int num : list){
+            nums[i++] = num;
+        }
 
-        return uniqueElements;
+        return list.size();
     }
 }
